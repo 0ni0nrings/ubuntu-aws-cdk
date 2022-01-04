@@ -62,6 +62,10 @@ jobs:
         run: cdk synth
         working-directory: cdk-pipeline
 
+      - name: CDK Bootstrap
+        run: cdk bootstrap
+        working-directory: cdk-pipeline
+
       - name: CDK Deploy
         run: cdk deploy
         working-directory: cdk-pipeline
