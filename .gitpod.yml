@@ -1,0 +1,3 @@
+tasks:
+  - name: Configure Gitpod
+    command: sh ./gitpod-config.sh
