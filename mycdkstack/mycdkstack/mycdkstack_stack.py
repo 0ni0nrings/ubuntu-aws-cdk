@@ -17,3 +17,12 @@ class MycdkstackStack(Stack):
             self, "MycdkstackQueue",
             visibility_timeout=Duration.seconds(300),
         )
+
+        topic = sns.Topic(
+            self, "MycdkstackQueue",
+            display_name="MycdkstackQueue"
+        )
+
+        topic.subscribe-queue(queue)
+
+        
