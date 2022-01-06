@@ -1,8 +1,7 @@
 from aws_cdk import (
     aws_iam as iam,
     aws_sqs as sqs,
-    aws_sns as sns,
-    cdk
+    aws_sns as sns
 )
 from constructs import Construct
 
