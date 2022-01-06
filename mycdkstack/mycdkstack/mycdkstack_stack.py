@@ -1,7 +1,8 @@
 from aws_cdk import (
-    # Duration,
-    Stack,
+    aws_iam as iam,
     aws_sqs as sqs,
+    aws_sns as sns,
+    cdk
 )
 from constructs import Construct
 
@@ -15,7 +16,7 @@ class MycdkstackStack(Stack):
         # example resource
         queue = sqs.Queue(
             self, "MycdkstackQueue",
-            visibility_timeout=Duration.seconds(300),
+            visibility_timeout_sec=300,
         )
 
         topic = sns.Topic(
