@@ -28,7 +28,7 @@ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(l
 sudo apt-get update && sudo apt-get install terraform
 apt install -y npm
 npm install -g npm@latest
-npm install -g aws-cdk
+npm install -g aws-cdk@v1.138.0
 npm install -g aws-cdk@next
 npm install -g yarn
 cd $ROOT_DIR
